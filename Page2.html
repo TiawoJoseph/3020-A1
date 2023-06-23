@@ -12,12 +12,12 @@
                 <tr>
                     <th class="th">Ogunnupe, Joseph 2163<b style="color: red;">9</b>4504</th>
                     <th class="th" id="DD">
-                        <select name="stuId" id="stuId"  onclick=" alr();">
+                        <select name="stuId" id="stuId"  onchange="JavaScript:processEvent(this.form);">
                         <option value="Select">Select</option>
-                        <option value="Two" onclick=" alr();">Two</option>
-                        <option value="One" onclick=" alr();">One</option>
-                        <option value="Six" onclick=" alr();">Six</option>
-                        <option value="Three" onclick=" alr();">Three</option>
+                        <option value="Two" >Two</option>
+                        <option value="One" >One</option>
+                        <option value="Six" >Six</option>
+                        <option value="Three" >Three</option>
                       </select></th>
                     <th class="th" style="width: 40%; height: 1px;">
                     <img src="./img/Brook2.jpg" alt="brook.png"/>
@@ -102,6 +102,23 @@
         
         
         alert("A new value has been selected");
+        }
+//need to change the code (personalize)
+        function processEvent (frm){
+            
+            var newCityValue ;
+            var newCityText ;
+            
+            newCityValue = frm.stuId.options [frm.stuId.selectedIndex].value ;
+            newCityText = frm.stuId.options [frm.stuId.selectedIndex].text ;
+            
+          
+            alert (newCityText) ;
+
+            frm.txtTest.value = newCityValue;
+    
+  
+
         }
 
     </script>
