@@ -11,13 +11,13 @@
         <table class="table" style="width: 100%;">
                 <tr>
                     <th class="th">Ogunnupe, Joseph 2163<b style="color: red;">9</b>4504</th>
-                    <th class="th">
-                        <select name="stuId" id="stuId">
+                    <th class="th" id="DD">
+                        <select name="stuId" id="stuId"  onclick=" alr();">
                         <option value="Select">Select</option>
-                        <option value="Two">Two</option>
-                        <option value="One">One</option>
-                        <option value="Six">Six</option>
-                        <option value="Three">Three</option>
+                        <option value="Two" onclick=" alr();">Two</option>
+                        <option value="One" onclick=" alr();">One</option>
+                        <option value="Six" onclick=" alr();">Six</option>
+                        <option value="Three" onclick=" alr();">Three</option>
                       </select></th>
                     <th class="th" style="width: 40%; height: 1px;">
                     <img src="./img/Brook2.jpg" alt="brook.png"/>
@@ -30,7 +30,7 @@
                            eveniet ullam laudantium hic.</th>
                 </tr>
                 <tr>
-                    <th class="th"><input type="text" id="blank-input" name="fname"></th>
+                    <th class="th"><input type="text" id="blank-input" name="fname"  onclick=" alr();"></th>
                     <th class="th">The fault in our stars. Josh Boone</th>
                     <th class="th" style="width: 40%; height: 30px;">
                         <img src="./img/Train.jpg" alt="Train.png"/>
@@ -40,7 +40,7 @@
                 <tr>
                     <th class="th">
                         <form>
-                            <input type="checkbox" id="n1" name="n1" value="John">
+                            <input type="checkbox" id="n1" name="n1" value="John"  onclick=" alr();">
                             <label for="n1"> John</label><br>
                             <input type="checkbox" id="n2" name="n2" value="Margret">
                             <label for="n2"> Margret </label><br>
@@ -62,11 +62,11 @@
 
                         <form >
                            
-                            <input type="radio" id="RB1" name="Anna" value="Anna">
+                            <input type="radio" id="RB1" name="Anna" value="Anna"  onclick=" alr();">
                             <label for="Anna">Anna</label><br>
-                            <input type="radio" id="RB2" name="Adil" value="Adil">
+                            <input type="radio" id="RB2" name="Adil" value="Adil"  onclick=" alr();">
                             <label for="css">Adil</label><br>
-                            <input type="radio" id="RB3" name="Shanon" value="Shanon">
+                            <input type="radio" id="RB3" name="Shanon" value="Shanon"  onclick=" alr();">
                             <label for="javascript">Shanon</label>
 
                     </th>
@@ -95,5 +95,15 @@
         </tr>
     </div>
     </form>
+
+    <script>
+        function alr (){
+        //    DropDown = document.getElementById('DD')
+        
+        
+        alert("A new value has been selected");
+        }
+
+    </script>
 </body>
 </html>
