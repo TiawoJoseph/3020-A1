@@ -1,0 +1,10 @@
+#hidden-fields, #hidden-fields2{
+    display: none;
+}
+
+
+.btn{
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+}

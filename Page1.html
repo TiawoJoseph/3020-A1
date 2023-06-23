@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Page2.css">
+    <title>Page 1</title>
+</head>
+<body>
+
+    <!--2.1.1-->
+    <form>
+        <table>
+            <tr>
+                <th><label for="fname">First name:</label></th>
+                <th> <input type="text" id="fname" name="fname"></th>
+            </tr>
+               
+            <tr>
+                <th><label for="Lname">Last name:</label></th>
+                <th> <input type="text" id="Lname" name="Lname"></th>
+                
+            </tr>
+           
+          <tr>
+            <th><button status="submit" class="btn" onclick="return Display();">Submit</button></th>
+            <th><button status="submit" class="btn">Help</button></th>
+          </tr>
+            
+        </table>
+        </form>
+      
+
+        <p id="hidden-fields" value="Joseph Ogunnupe"> Joseph </p>
+        <p id="hidden-fields2"> Ogunnupe </p>
+
+    </form>
+
+
+    <script>
+
+
+
+        function Display (){
+            let FName = document.getElementById('hidden-fields')
+            let Lname = document.getElementById('hidden-fields2')
+            let Name = FName.textContent + " " + Lname.textContent;
+            alert(Name)
+        }
+    </script>
+</body>
+</html>
