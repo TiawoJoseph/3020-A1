@@ -30,7 +30,7 @@
                            eveniet ullam laudantium hic.</th>
                 </tr>
                 <tr>
-                    <th class="th"><input type="text" id="blank-input" name="fname"  onclick=" alr();"></th>
+                    <th class="th"><input type="text" id="blank-input" name="fname"  onclick=" alr();"> <p id="hidden-rq" style="display: none;">Jacker poppers</p></th>
                     <th class="th">The fault in our stars. Josh Boone</th>
                     <th class="th" style="width: 40%; height: 30px;">
                         <img src="./img/Train.jpg" alt="Train.png"/>
@@ -89,7 +89,7 @@
         <tr ">
 
             <!--Need to make the specifications listed in the eclass.-->
-            <th><button id="button">Button1</button></th>
+            <th><button id="button" onclick="reveal();">Button1</button></th>
             <th><button id="button">Button2</button></th>
             <th><button id="button">Button3</button></th>
         </tr>
@@ -97,6 +97,13 @@
     </form>
 
     <script>
+          
+        function reveal(){
+           Rq= document.getElementById('hidden-rq')
+           
+            Hidden=Rq.textContent
+            alert(Hidden)
+        }
         function alr (){
         //    DropDown = document.getElementById('DD')
         
