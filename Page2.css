@@ -25,3 +25,29 @@
     align-items: center;
     text-align: center;
   }
+
+  p {
+    color: red;
+  }
+
+ul, li {
+    background-color: burlywood;
+}
+
+.lorem{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+#button {
+
+    background-color: cadetblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    border: 1px;
+    border-color: black;
+}
+
+#button:hover, #RB1, #RB2, #RB3{
+    cursor: pointer;
+}
+
