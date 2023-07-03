@@ -7,6 +7,7 @@
     <title>Page 2</title>
 </head>
 <body>
+    <!--2.2.1-->
     <form class="w-form">
         <table class="table" style="width: 100%;">
                 <tr>
@@ -97,7 +98,7 @@
     </form>
 
     <script>
-          
+          //2.2.3
         function reveal(){
            Rq= document.getElementById('hidden-rq')
            
@@ -105,27 +106,15 @@
             alert(Hidden)
         }
         function alr (){
-        //    DropDown = document.getElementById('DD')
-        
-        
+
         alert("A new value has been selected");
         }
 //need to change the code (personalize)
         function processEvent (frm){
-            
-            var newCityValue ;
-            var newCityText ;
-            
-            newCityValue = frm.stuId.options [frm.stuId.selectedIndex].value ;
-            newCityText = frm.stuId.options [frm.stuId.selectedIndex].text ;
-            
-          
-            alert (newCityText) ;
-
-            frm.txtTest.value = newCityValue;
-    
-  
-
+            var dropdown;  
+            dropdown= frm.stuId.options [frm.stuId.selectedIndex].text ;
+            alert (dropdown) ;
+            // frm.txtTest.value = newCityValue;
         }
 
     </script>

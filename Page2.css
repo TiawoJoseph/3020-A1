@@ -1,15 +1,22 @@
-
+/*
+Page1.html External CSS - 2.1.2
+*/
 #hidden-fields, #hidden-fields2{
     display: none;
 }
-
-
+/*
+Page1.html External CSS - 2.1.2
+*/
 .btn{
     background-color: blueviolet;
     color: white;
     font-weight: bold;
 }
 
+
+/*
+Page2.html External CSS 2.2.2
+*/
 .table, .th {
     border:1px solid black;
     border-collapse: collapse;
